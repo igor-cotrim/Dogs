@@ -31,7 +31,7 @@
   },
   "include": [
     "src",
-    "./declaration.d.ts"
+    "./declaration.d.ts",
   ],
   "typeAcquisition": {
 		"enable": true
