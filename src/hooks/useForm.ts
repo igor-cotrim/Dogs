@@ -11,7 +11,7 @@ const types = {
   }
 }
 
-const useForm = (type?: useFormProps) => {
+const useForm = (type?) => {
   const [value, setValue] = useState('');
   const [error, setError] = useState(null);
 
