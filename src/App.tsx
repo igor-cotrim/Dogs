@@ -9,6 +9,7 @@ import UserProfile from "./components/UserProfile"
 import Login from "./pages/Login"
 import Home from "./pages/Home"
 import User from "./pages/User"
+import NotFound from "./pages/NotFound"
 
 import './App.css'
 
@@ -28,6 +29,7 @@ function App() {
             } />
             <Route path="foto/:id" element={<Photo />} />
             <Route path="perfil/:user" element={<UserProfile />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </UserStorage>
