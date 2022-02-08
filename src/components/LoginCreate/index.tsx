@@ -1,8 +1,9 @@
 import { useContext } from "react";
 
-import Input from "../../components/Input";
-import Button from "../../components/Button";
-import Error from "../../components/Error";
+import Input from "../Input";
+import Button from "../Button";
+import Error from "../Error";
+import Head from "../Head";
 import useForm from "../../hooks/useForm";
 import useFetch from "../../hooks/useFetch";
 import { UserContext } from "../../contexts/UserContext";
@@ -30,6 +31,7 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
+      <Head title='Criar Conta' description="Pagina de criar conta" />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input

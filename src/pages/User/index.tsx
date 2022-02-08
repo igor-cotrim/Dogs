@@ -5,6 +5,7 @@ import Feed from "../../components/Feed";
 import UserPhotoPost from "../../components/UserPhotoPost";
 import UserHeader from "../../components/UserHeader";
 import UserStats from "../../components/UserStats";
+import Head from "../../components/Head";
 import { UserContext } from "../../contexts/UserContext";
 import NotFound from "../NotFound";
 
@@ -13,6 +14,7 @@ const User = () => {
 
   return (
     <section className="container">
+      <Head title='Minha Conta' description="Pagina de Minha Conta" />
       <UserHeader />
       <Routes>
         <Route path="/" element={<Feed user={data.id} />} />

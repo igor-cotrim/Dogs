@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import Input from "../../components/Input";
-import Button from "../../components/Button";
-import Error from "../../components/Error";
+import Input from "../Input";
+import Button from "../Button";
+import Error from "../Error";
+import Head from "../Head";
 import useForm from "../../hooks/useForm";
 import { UserContext } from "../../contexts/UserContext";
 
@@ -25,6 +26,7 @@ const LoginForm = () => {
 
   return (
     <section className="animeLeft">
+      <Head title='Login' description="Pagina de Login" />
       <h1 className="title">Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <Input label='Usuário' type='text' name='username' {...username} />
