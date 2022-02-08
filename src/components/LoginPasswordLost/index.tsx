@@ -1,5 +1,3 @@
-
-
 const LoginPasswordLost = () => {
   return <div></div>;
 };

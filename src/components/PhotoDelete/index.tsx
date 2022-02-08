@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { PHOTO_DELETE } from '../../api';
 import useFetch from '../../hooks/useFetch';
 

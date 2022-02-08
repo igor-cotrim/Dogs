@@ -7,8 +7,6 @@ import PhotoContent from '../PhotoContent';
 import useFetch from '../../hooks/useFetch';
 import { PHOTO_GET } from '../../api';
 
-import styles from './styles.module.css'
-
 const Photo = () => {
   const { id } = useParams()
   const { data, error, loading, request } = useFetch()
