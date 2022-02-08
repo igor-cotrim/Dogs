@@ -8,12 +8,12 @@ import Image from '../Image';
 
 import styles from './styles.module.css'
 
-const PhotoContent = ({ data }) => {
+const PhotoContent = ({ data, single }) => {
   const user = useContext<any>(UserContext)
   const { photo, comments } = data
 
   return (
-    <div className={styles.photo}>
+    <div className={`${styles.photo} ${single ? styles.single : ''}`}>
       <div className={styles.img}>
         <Image src={photo.src} alt={photo.title} />
       </div>
@@ -36,7 +36,7 @@ const PhotoContent = ({ data }) => {
           </ul>
         </div>
       </div>
-      <PhotoComments id={photo.id} comments={comments} />
+      <PhotoComments single={single} id={photo.id} comments={comments} />
     </div>
   )
 };
