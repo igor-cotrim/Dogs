@@ -44,8 +44,6 @@ const UserPhotoPost = () => {
     })
   }
 
-  console.log(img);
-
   return (
     <section className={`${styles.photoPost} animeLeft`}>
       <form onSubmit={handleSubmit}>
